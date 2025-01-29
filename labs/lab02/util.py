@@ -1,5 +1,6 @@
 import doctest
 import numpy as np
+import math
 
 
 def mse(pred:np.array, true:np.array) -> float:
@@ -17,7 +18,11 @@ def mse(pred:np.array, true:np.array) -> float:
     41.0
 
     """
-    pass
+    subsum=0
+    for i in range(len(pred)):
+        subsum += (pred[i] - true[i]) * (pred[i] - true[i])
+    return float(round(subsum/len(pred),2))
+
 
 
 def accuracy(pred:np.array, true:np.array) -> float:
@@ -34,7 +39,12 @@ def accuracy(pred:np.array, true:np.array) -> float:
     >>> accuracy(np.array(['A','A','B','A', 'A', 'C', 'C']), np.array(['C','A','B','A', 'A', 'C', 'B']))
     71.43
     """
-    pass
+    hits = 0
+    for i in range(len(pred)):
+        if pred[i] == true[i]:
+            hits += 1
+    accuracy = 100 * round(hits/len(pred), 4)
+    return accuracy
 
 def precision(pred:np.array, true:np.array) -> float:
     """
@@ -50,10 +60,26 @@ def precision(pred:np.array, true:np.array) -> float:
     >>> precision(np.array(['A','A','B','A', 'A', 'C', 'C']), np.array(['C','A','B','A', 'A', 'C', 'B']))
     75.0
     """
-    pass
+    dist_list = []
+    for i in range(len(pred)):
+        if pred[i] not in dist_list:
+            dist_list.append(pred[i])
+    subsum = 0
+    for j in range(len(dist_list)):
+        current_class = dist_list[j]
+        occurrences = 0
+        hits = 0
+        for k in range(len(pred)):
+            if (pred[k] == current_class):
+                occurrences += 1
+                if (true[k] == current_class):
+                    hits +=1
+        subsum += 100 * (hits/occurrences)
+    return round(subsum/len(dist_list), 2)
 
 def recall(pred:np.array, true:np.array) -> float:
     """
+
     Input:
         pred: numpy array of predicted labels
         true: numpy array of true labels
@@ -66,7 +92,22 @@ def recall(pred:np.array, true:np.array) -> float:
     >>> recall(np.array(['A','A','B','A', 'A', 'C', 'C']), np.array(['C','A','B','A', 'A', 'C', 'B']))
     66.67
     """
-    pass
+    dist_list = []
+    for i in range(len(true)):
+        if true[i] not in dist_list:
+            dist_list.append(true[i])
+    subsum = 0
+    for j in range(len(dist_list)):
+        current_class = dist_list[j]
+        occurrences = 0
+        hits = 0
+        for k in range(len(true)):
+            if (true[k] == current_class):
+                occurrences += 1
+                if (pred[k] == current_class):
+                    hits +=1
+        subsum += 100 * (hits/occurrences)
+    return round(subsum/len(dist_list), 2)
 
 
 def fscore(pred, true, f_val):
@@ -86,6 +127,40 @@ def fscore(pred, true, f_val):
     >>> fscore(np.array([1,1,1,1,1,0]), np.array([0,0,1,1,1,1]), f_val=2)
     0.36
     """
+    dist_list = []
+    for i in range(len(true)):
+        if true[i] not in dist_list:
+            dist_list.append(true[i])
+    subsum = 0
+    f_val_squared = f_val * f_val
+    for j in range(len(dist_list)):
+        current_class = dist_list[j]
+        occurrences_pred = 0
+        occurrences_true = 0
+        hits_given_pred = 0
+        hits_given_true = 0
+        for k in range(len(true)):
+            if (true[k] == current_class):
+                occurrences_true += 1
+                if (pred[k] == current_class):
+                    hits_given_true +=1
+            if (pred[k] == current_class):
+                occurrences_pred += 1
+                if (true[k] == current_class):
+                    hits_given_pred +=1
+
+        prec = hits_given_pred/occurrences_pred
+        rec = hits_given_true/occurrences_true
+        if (prec == 0 and rec == 0):
+            subsum = 0
+        else:
+            subsum += (((f_val_squared+1) * prec * rec) / ((f_val_squared * prec) + rec))
+
+
+    return round(subsum/len(dist_list), 2)
+
+
+
 
 def euclidean_distance(point: np.array, data: np.array) -> np.array:
     """ Calculates the euclidean distance for a point against all the data.
@@ -102,7 +177,13 @@ def euclidean_distance(point: np.array, data: np.array) -> np.array:
     >>> euclidean_distance(np.array([3,5,1]), np.array([[2,3,4], [3,5,2], [5,-1,0], [0,0,0]]))
     array([3.74165739, 1.        , 6.40312424, 5.91607978])
     """
-    pass
+    distance = []
+    for i in range(len(data)):
+        subsum = 0
+        for j in range(len(point)):
+            subsum += (point[j] - data[i][j]) * (point[j] - data[i][j])
+        distance.append(round(math.sqrt(subsum), 8))
+    return np.array(distance)
 
 
 def mode(labels: np.array) -> list:
@@ -126,7 +207,23 @@ def mode(labels: np.array) -> list:
     >>> mode([1, 0, 0, 1, 2, 3])
     [0, 1]
     """ 
-    pass
+    count = {}
+    for i in range(len(labels)):
+        if labels[i] in count:
+            count[labels[i]] += 1
+        else:
+            count[labels[i]] = 1
+    max = []
+    maxNum = 0
+    for key in count.keys():
+        if count[key] > maxNum:
+            max = [key]
+            maxNum = count[key]
+        elif count[key] == maxNum:
+            if key not in max:
+                max.append(key)
+    max.sort()
+    return max
 
 
 
