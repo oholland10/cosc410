@@ -75,11 +75,17 @@ def fscore(pred, true, f_val):
         pred: numpy array of predicted labels
         true: numpy array of true labels
     Output:
-        macro average f-score: float as percent; rounded to two decimal points
+        macro average f-score: float; rounded to two decimal points
 
-    ## Add test cases
+    >>> fscore(np.array(['A','A','B','A', 'A', 'C', 'C']), np.array(['C','A','B','A', 'A', 'C', 'B']), f_val=1)
+    0.67
+
+    >>> fscore(np.array(['A','A','B','A', 'A', 'C', 'C']), np.array(['C','A','B','A', 'A', 'C', 'B']), f_val=0.5)
+    0.71
+
+    >>> fscore(np.array([1,1,1,1,1,0]), np.array([0,0,1,1,1,1]), f_val=2)
+    0.36
     """
-    pass
 
 def euclidean_distance(point: np.array, data: np.array) -> np.array:
     """ Calculates the euclidean distance for a point against all the data.
