@@ -98,3 +98,10 @@ You see `cosc410` but you want to reinstall it. To do this, delete the environme
     conda remove -n cosc410 --all 
 
 
+### Installation for `datasets` or `evaluate` doesn't work
+If you are running into an error with `cmake` when installing datasets try installing it with conda
+
+```
+conda install anaconda::evaluate
+conda install conda-forge::datasets 
+```
