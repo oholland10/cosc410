@@ -92,9 +92,9 @@ you run:
 
     conda env list 
 
-You see `cosc410` but you want to reinstall it. To do this, delete the environment: 
+You see `cosc410` but you want to reinstall it. To do this, delete the environment (first deactivate it): 
 
-    conda deactivate cosc410
+    conda deactivate 
     conda remove -n cosc410 --all 
 
 
