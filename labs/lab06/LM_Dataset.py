@@ -22,7 +22,8 @@ class LM_Dataset(torch.utils.data.Dataset):
 
     def make_mapping(self, vocab_fname):
         with open(vocab_fname, 'r') as f:
-            vocab = set(f.read().replace('\n', ''))
+            vocab = f.read().split()
+            vocab = set([word.strip() for word in vocab])
 
         special_tokens = {
             '[PAD]': 0,
