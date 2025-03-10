@@ -14,6 +14,9 @@ First, you will work-through (at some level of detail) a project idea on your ow
 
 ## Phase two: Pilot proposal + feedback (in a group)
 
+* [Project teams](https://docs.google.com/spreadsheets/d/1p0Li_78Pr1mCcpyATS9H8q89hEozkr9BUOmDS5EjMbQ/edit?usp=sharing) Need to be signed into Colgate email
+* [Project proposal template](https://docs.google.com/document/d/1V5Boa1_JeuTWTGUJo8Jd6eyI4oM5JhcmKijDXY3Xr2A/edit?usp=sharing)
+
 
 ## Phase three: Pilot results presentation (in a group)
 
