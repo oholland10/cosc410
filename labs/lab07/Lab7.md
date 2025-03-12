@@ -10,7 +10,7 @@
 
 * Intepret code involving more complex training settings including the use of GPUs
 
-* Build and train CNN classifiers
+* Build and train CNN classifiers using `torch.nn.Conv2d`, `torch.nn.Dropout`, `torch.nn.functional.max_pool2d`, and other pytorch layers and functions you've seen before. 
 
 #### Submission instructions
 
