@@ -13,7 +13,7 @@ class Net1(nn.Module):
     - FullyConnected: as many units as output
     """
     def __init__(self):
-        super(Net4, self).__init__()
+        super(Net1, self).__init__()
         self.dropout = nn.Dropout(0.25)
         ## Write code here
         
@@ -37,7 +37,7 @@ class Net2(nn.Module):
     - FullyConnected: as many units as output
     """
     def __init__(self):
-        super(Net4, self).__init__()
+        super(Net2, self).__init__()
         self.dropout = nn.Dropout(0.25)
         ## Write code here
         
@@ -64,7 +64,7 @@ class Net3(nn.Module):
     - FullyConnected2: as many units as output
     """
     def __init__(self):
-        super(Net4, self).__init__()
+        super(Net3, self).__init__()
         self.dropout = nn.Dropout(0.25)
         ## Write code here
         pass
