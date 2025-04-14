@@ -18,10 +18,25 @@ First, you will work-through (at some level of detail) a project idea on your ow
 * [Project proposal template](https://docs.google.com/document/d/1V5Boa1_JeuTWTGUJo8Jd6eyI4oM5JhcmKijDXY3Xr2A/edit?usp=sharing)
 
 
-## Phase three: Pilot results presentation (in a group)
+Each group will present your pilot results for 5 minutes. Your presentation should include the following components.  
+
+* Broad goal and the specific question you are looking at in the project. (1 minute)
+
+* An *overview* of the methods you use. What data are you using? What is the **sequence of steps** you took to go from a dataset to a results table/figure? (2 minutes) 
+
+* Current state of your results + any other experiments you plan to run for the final project. You should have at least one figure or table. (2 minutes)
+
+After each presentation, there will be 2 minutes of questions/feedback from your peers. 
+
+Add your slides to [this folder](https://drive.google.com/drive/folders/1cjgTrJabEHMq7te5EvYV5Zz03Y-OvLXG?usp=drive_link) (Only for F25 COSC 410B; you need to be signed in with your Colgate email)
 
 
 ## Phase four: Poster presentation (in a group)
+
+* [Poster template](https://docs.google.com/presentation/d/1GGJMG_BTGtAOZLpRNaWq_JYd7sqgx72Vi5sCLR2ZhaA/edit?usp=sharing)
+* [Poster presentation schedule](https://docs.google.com/spreadsheets/d/1p0Li_78Pr1mCcpyATS9H8q89hEozkr9BUOmDS5EjMbQ/edit?usp=sharing) (Only for F24 COSC 426B; you need to be signed in with your Colgate email. Look at "Poster presentation schedule" tab.)
+* [Poster presentation rubric](https://docs.google.com/document/d/1FT_WVUHGX2FyaP49hB2R6xkZXdCiewCWWNjmjZRTvUE/edit?usp=sharing)
+
 
 
 ## Phase five: Writing the final paper (on your own)
