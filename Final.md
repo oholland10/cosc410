@@ -28,7 +28,7 @@ Each group will present your pilot results for 5 minutes. Your presentation shou
 
 After each presentation, there will be 2 minutes of questions/feedback from your peers. 
 
-Add your slides to [this folder](https://drive.google.com/drive/folders/1cjgTrJabEHMq7te5EvYV5Zz03Y-OvLXG?usp=drive_link) (Only for F25 COSC 410B; you need to be signed in with your Colgate email)
+Add your slides to [this folder](https://drive.google.com/drive/folders/1cjgTrJabEHMq7te5EvYV5Zz03Y-OvLXG?usp=drive_link) (Only for S25 COSC 410B; you need to be signed in with your Colgate email)
 
 **If you want to use Turing to submit jobs, look at instructons [here](https://github.com/forrestdavis/NLPScholar/blob/main/Server.md) and/or come talk to me!**
 
