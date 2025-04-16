@@ -18,6 +18,7 @@ First, you will work-through (at some level of detail) a project idea on your ow
 * [Project proposal template](https://docs.google.com/document/d/1V5Boa1_JeuTWTGUJo8Jd6eyI4oM5JhcmKijDXY3Xr2A/edit?usp=sharing)
 
 
+## Phase three: Pilot results presentation (in a group)
 Each group will present your pilot results for 5 minutes. Your presentation should include the following components.  
 
 * Broad goal and the specific question you are looking at in the project. (1 minute)
