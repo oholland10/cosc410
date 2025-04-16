@@ -1,6 +1,6 @@
 ## Overview
 
-For the final, you and a group of two to three people will work on a substantive independent NLP project. You will make both a final poster, to present your research to others in the class and the community during a showcase, and a final paper.
+For the final, you and a group of two to three people will work on a substantive independent project. You will make both a final poster, to present your research to others in the class and the community during a showcase, and a final paper.
 
 You will work on the project in five phases. You can read about the pedagogical motivation for each of those phases in [Prasad and Davis (2024)](https://aclanthology.org/2024.teachingnlp-1.16/). 
 
